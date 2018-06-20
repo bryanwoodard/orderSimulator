@@ -1,8 +1,7 @@
 /*
-version 1.0.1
+version 1.0.2
 To be included in next release v1.1:
 	- optimize code, eliminate redundancies
-	- better code notes
 	- error handling
 	- figure better way to include spec prod string and nums for when defaults values arent good enough
 */
