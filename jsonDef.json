@@ -1,0 +1,56 @@
+//Order Sim JSON config object
+
+{
+    "id" : "Order_Simulator",
+    "title": "Order Simulator",
+    "description": "This tool lets you quickly send test orders for troublehsooting tags",
+    "icon_url" : "https://tools.tealiumiq.com/tools/logo.png",
+    "scripts": {
+        "build_order" : {
+            "title": "Build Order",
+            "description": "Select the items you want.",
+            "button_label": "Show me a message!",
+            "js": "tealiumTools.sendMessage('Hello!', 'This is a sample message!')"
+        },
+        "error" : {
+            "title": "Show Error",
+            "description": "Press the button below to display an error alert.",
+            "button_label": "Show me an error!",
+            "js": "tealiumTools.sendError('Error!', 'This is a sample error!')"
+        }
+    },
+    "template":""
+}
+
+
+
+/*//////////////////
+
+- Sample JSON def
+
+*/
+
+
+{
+    "id" : "unique_title_no_spaces",
+    "title": "TEST - Unique Title ",
+    "description": "Description of tool: This tool demonstrates how to send simple message and error alerts.",
+    "icon_url" : "https://tools.tealiumiq.com/tools/logo.png",
+    "template" : "<h4>Check out what I found in utag.data:</h4><ul>{{#each this}}<li>{{@key}}:{{this}}</li>{{/each}}</ul>",
+    "scripts": {
+        "message" : {
+            "title": "Show Message TAB",
+            "description": "Description: Press the button below to display a message alert.",
+            "button_label": "Show me a message!",
+            "js": "tealiumTools.sendMessage('Hello!', 'This is a sample message!')",
+            "template": "<h4>Check out what I found in utag.data:</h4><ul>{{#each this}}<li>{{@key}}:{{this}}</li>{{/each}}</ul>",
+            "input": {
+            	"test1": {
+            		"type":"text",
+            		"placeholder": "this is the placeholder of test1",
+            		"label": "Test 1"
+            	}
+            }
+        }
+    }
+}

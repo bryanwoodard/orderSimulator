@@ -1,0 +1,34 @@
+Tealium Tools
+
+
+Goal:
+	- what does the "template" do?
+
+	- Define input fields
+
+	- where does js run?
+
+
+
+Notes:
+	- scripts is necessary.  If only one object, then it will not be tabbed
+	- best to use remote template for all the html
+	- how to use with handlebars
+		- whatever sent in tealimTools.send() will the available in template.
+
+
+
+Plan:
+	- Host folder in file
+	- build out template on its own
+		- input boxes in templates html
+		- add js initialization script to template or whole script in template.
+	- get familiar with handlebars templating
+	- see environment swticher example code
+		- https://solutions.tealium.net/hosted/tealiumTools/env_switcher/env_switcher.json
+		- take note of:
+			- js
+				- send code to temlate if utag.js is not on page
+				- tealimTools.send() 
+			- template
+				- template code also has its own js in there which actually does the processes based on what "js" sends (tealimTools.send())
