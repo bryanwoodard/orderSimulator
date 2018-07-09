@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<head>
+	<script type="text/javascript" src="orderSim.js"></script>
+</head>
+<body>
+	<p>
+		You can use this tool to quickly and easily send test orders from any page.  Just input the following parameters and click sumbit
+	</p>
+	<div class="tool" id="settings">
+		<p>
+			Utag Method
+			<select>
+				<option value="view">view</option>
+				<option value="link">link</option>
+			</select>
+		</p>
+		<p>
+			Number of Products:
+			<input type="number" name="quantity" min="1" max="5">
+		</p>
+		<div>
+			<p id="inputs">
+				Other Fields (input as "key":"value"):</br>  
+				<input type="text" class="kv" id="kv_1"></input></br>
+				<input type="text" class="kv" id="kv_2"></input></br>
+				<input type="text" class="kv" id="kv_3"></input></br>
+			</p>
+			<button type="button" id="add_input" onclick> Add Input</button>
+		</div>
+		<p>
+			Specific Array of Tags to Load (input as ["22","44","31"]):
+			<input type="text" id="tag_array">
+		</p>
+	</div>
+
+
+</body>
+</HTML>

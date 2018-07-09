@@ -97,7 +97,23 @@ window.orderSim = window.orderSim || {
 			obj.order_id = this.buildString(1).toString();
 		}
 		return obj;
-	}		
+	},
+	scrape: function(){
+		//scrape input values
+	},
+	addInput: function(){
+		//Add input values and line break	
+		var num = document.querySelectorAll("input.kv").length + 1;
+		var node = document.createElement("input");
+		node.type = "text";
+		node.id = `kv_${num}`;
+		var list = document.querySelectorAll("p#inputs")[0];
+		var br = document.createElement("br");
+		list.appendChild(node);
+		list.appendChild(br);
+
+	}
+
 }
 
 //orderSim.send("view",3,null, {event_name:"test"});
