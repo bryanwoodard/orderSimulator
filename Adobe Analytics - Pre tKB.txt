@@ -1,0 +1,36 @@
+Adobe Analytics 
+
+
+Props 
+	
+	- Props are considered traffic variables, 
+		- meaning they are used to report on popularity of various dimensions of your site.
+	
+	- Props do not persist beyond the image request they were fired on. They cannot be associated with other variables that are not in the same image request.
+
+	- Props can use pathing, which allows your organization to see a given path a user took within the context of the variable being viewed. An Adobe representative can enable pathing, if requested. 
+
+	Advantages:
+		- Prop data is collected and available in reporting almost instantly. eVars can take upwards of 30 minutes to appear in report suite data.
+
+		- All Props can have flowchart-like reports enabled, which let you see the path visitors take to your site. These pathing flow reports are available for both Props and eVars in Ad Hoc Analysis.
+
+		- Props can be correlated multiple levels, where eVars can only be subrelated once. This limitation can be mitigated by using segmentation, giving identical data as correlations.
+
+		- Participation metrics allow you to see what prop values participated before a success event.
+
+
+ Evars:
+
+ 	- eVars are considered conversion variables. 
+		- They are used to determine which dimensions of your site contribute the most to success events.
+	
+	- eVars, however, are persistent. A back-end variable is used to preserve the value originally fired so it can associate itself with success events later on. 
+	
+	- eVars cannot use pathing.
+
+	Advantages:
+		- eVars can use success events as metrics. Props cannot.
+
+		- eVar expiration can be customized, including having an expiration of every hit (no persistent values whatsoever). Props don't persist in any way.
+	
